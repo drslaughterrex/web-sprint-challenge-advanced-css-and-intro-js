@@ -218,7 +218,7 @@ Practice accessing data above by console.log-ing following items:
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
-artists[8].name = 'Vincent Van Gogh'
+// artists[8].name = 'Vincent Van Gogh'
 
 // console.log(artists[8]);
 
@@ -235,7 +235,7 @@ function getArtistByIndex(array, number) {
   return artistIndex
 }  
 
-console.log(getArtistByIndex(artists, 0));
+// console.log(getArtistByIndex(artists, 0));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use get20s to do the following: 
@@ -245,15 +245,15 @@ Use get20s to do the following:
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(array){}
-//   let centuryArray = [];
-//     for(let i = 0; i < array.length; i++){
-//       if(array[i].years >= 1900 && array[i].years <= 2000);
-//       centuryArray.push(array[i].name);
-//     }
-//     return centuryArray;
-//   }
-// console.log(get20s())
+function get20s(array){
+  let centuryArray = [];
+    for(let i = 0; i < array.length; i++){
+      if(array.years >= 1900 && array.years <= 2000);{
+        centuryArray.push(array.name);
+      } 
+    } 
+    return centuryArray;
+  }
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -266,7 +266,7 @@ function get20s(array){}
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
 function removeArtist(array, index){
-   const remove = array.indexOf(index);
+   const loseArtist = array.indexOf(index);
    if (index > -1){
      array.splice(index, 1);
    }
@@ -291,10 +291,19 @@ Use addArtist to do the following:
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
 function addArtist(array){
-    /*Your Code Here*/
+    const improvedArray = { 
+      'id' : 20,
+      'name' : 'Justin McGraw' ,
+      'years' : '1992 - current day',
+      'genre' : 'Web Design', 
+      'nationality': 'American',
+      'bio': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+    } 
+    artists.push(improvedArray);
+    return artists;
   }
 
-  
+  // console.log(addArtist())
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
@@ -304,10 +313,14 @@ Use lotsOfArt to do the following:
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
 function lotsOfArt(array){
-  /*Your Code Here*/
+  const numPaintings = [];
+  for(let i = 0; i < array.length; i++){
+    if(array[i].paintings > 100);
+    numPaintings.push(array[i].name);   
 }
-
-
+return numPaintings;
+}
+console.log(lotsOfArt(artists))
 
 
 // 🎨🎨 STRETCH 🎨🎨//
