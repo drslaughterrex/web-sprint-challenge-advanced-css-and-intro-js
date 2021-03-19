@@ -327,7 +327,7 @@ function addArtist(array) {
 	return array;
 }
 
-console.log(addArtist(artists))
+// console.log(addArtist(artists))
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 

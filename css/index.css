@@ -221,14 +221,16 @@ button:hover {
 	}
 	.title-container div {
 		width: 100%;
-		/* margin: auto; */
+		margin: auto;
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
 	}
+	button{
+		padding: 10px 30px;
+	}
 	hr {
-        width: 100%;
-        margin: 2% 0;
+        margin: 2% 4%;
 	}
 	.artist {
 		margin-top: 5%;
