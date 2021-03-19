@@ -314,7 +314,7 @@ Use addArtist to do the following:
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
 function addArtist(array) {
-	const improvedArray = {
+	const newEntry = {
 		id: 20,
 		name: "Justin McGraw",
 		years: "1992 - current day",
@@ -323,11 +323,11 @@ function addArtist(array) {
 		bio:
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 	};
-	artists.push(improvedArray);
-	return artists;
+	array.push(newEntry);
+	return array;
 }
 
-// console.log(addArtist(artists))
+console.log(addArtist(artists))
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
@@ -339,8 +339,9 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 function lotsOfArt(array) {
 	const numPaintings = [];
 	for (let i = 0; i < array.length; i++) {
-		if (array[i].paintings > 100);
+		if (array[i].paintings > 100){
 		numPaintings.push(array[i].name);
+  }
 	}
 	return numPaintings;
 }
